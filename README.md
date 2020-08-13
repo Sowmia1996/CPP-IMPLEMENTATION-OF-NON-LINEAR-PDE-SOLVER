@@ -58,7 +58,19 @@ I implemented various linear solvers for solving the system of linear equations 
  - Guass siedel iterative method
  - Successive over relaxation method
  
+# THE CATCH:
+In c++,we  have to store equations without actually evaluating them at any point inorder to avoid the agony of rewriting the eqaution for eacha and every grid-point.We want to to be general and not hard-code anything.To solve this problem,i 
+- converted the deiscretised equation to its postfix-form (which is found in **postfixeval.h**
+- And pushed them into a stack (which is found in **stackad.h**
+- Whenever we need to evaluate the equation at  a grid-point,we simply pop from the stack until empty and evaluate
+- a powerful use of data-structure!!!
+
+# POSSIBLE INPROVISATIONS:
+- We can deploy more advanced methods for solving the algebraic non-linear system of equations.
+- The jacobian matrix is going to be a tridiagonal matrix.So instead of storing them as matrix,we can store the values in a compressed format<br>
+ - compressed sparse row
+ - compressed col
+ - cordinate fomrat
+ inorder to reduce space 
 
 
-
-The derivaitves if other functions are computed using utility functions defined in **AD1_modifeid.h**.<br>
