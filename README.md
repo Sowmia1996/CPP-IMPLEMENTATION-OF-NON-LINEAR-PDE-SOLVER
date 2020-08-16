@@ -1,5 +1,5 @@
 # CPP-IMPLEMENTATION-OF-NON-LINEAR-SOLVER
-This is a implementation of general-purpose non-linear 3-dimeansional partial-differential equations solver.<br>
+This is a implementation of general-purpose non-linear 2-dimeansional partial-differential equations solver.<br>
 In mathematics and physics, a nonlinear partial differential equation is a partial differential equation with nonlinear terms. 
 They describe many different physical systems, ranging from gravitation to fluid dynamics, and have been used in mathematics to solve problems such as the Poincaré conjecture and the Calabi conjecture. 
 The main challenge with solving non-linear pde is that they are difficult to study: there are almost no general techniques that work for all such equations, and usually each individual equation has to be studied as a separate problem.
